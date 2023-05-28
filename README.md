@@ -1,3 +1,7 @@
+<p align="center">
+    <image src="./assets/cover.jpg">
+</p>
+
 # Chrome Extensions
 
 This repository is dedicated to the development and storage of various Chrome extensions. The purpose of this repository is to provide a centralized location for managing and version controlling the codebase of the Chrome extensions I will be developing.
