@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Hello Again Extensions",
+    "description": "Base Level Extension",
+    "version": "2.0",
+    "action": {
+        "default_popup": "./popup/popup.html",
+        "default_icon": "./images/icon.png"
+    }
+}
