@@ -1,0 +1,35 @@
+body {
+  background-color: indianred;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+  color: whitesmoke;
+}
+
+h2 {
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+#time-option {
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: 8px 10px;
+}
+
+#save-btn {
+  border: none;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 8px 10px;
+  font-weight: bold;
+  color: indianred;
+  background-color: whitesmoke;
+}
