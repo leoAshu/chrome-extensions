@@ -43,3 +43,22 @@ body {
   align-items: center;
   padding: 20px;
 }
+
+.task-input {
+  border: none;
+  outline: none;
+  width: 250px;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+}
+
+.task-delete {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px 8px;
+  color: indianred;
+  background-color: whitesmoke;
+}
