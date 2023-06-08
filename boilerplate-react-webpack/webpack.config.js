@@ -4,14 +4,13 @@ const HtmlPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-  // mode: 'production',
   mode: 'development',
   devtool: 'cheap-module-source-map',
   entry: {
     popup: path.resolve('src/popup/popup.tsx'),
     options: path.resolve('src/options/options.tsx'),
     background: path.resolve('src/background/background.ts'),
-    script: path.resolve('src/scripts/script.ts'),
+    script: path.resolve('src/content-scripts/script.ts'),
   },
   module: {
     rules: [
@@ -24,10 +23,6 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
         test: /\.css$/i,
       },
-      {
-        type: 'asset/resource',
-        test: /\.(jpg|jpeg|png|woff|woff2|eot|ttfsvg)$/,
-      },
     ],
   },
   plugins: [
@@ -38,8 +33,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve('src/static'),
-
-          to: path.resolve('dist'),
+          to: path.resolve('build'),
         },
       ],
     }),
@@ -50,7 +44,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve('dist'),
+    path: path.resolve('build'),
   },
   optimization: {
     splitChunks: {
@@ -63,7 +57,7 @@ function getHtmlPlugins(chunks) {
   return chunks.map(
     (chunk) =>
       new HtmlPlugin({
-        title: 'React Extension',
+        title: 'React Webpack Boilerplate',
         filename: `${chunk}.html`,
         chunks: [chunk],
       })
