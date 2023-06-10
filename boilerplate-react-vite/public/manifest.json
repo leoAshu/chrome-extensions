@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "boilerplate-react-vite",
+  "version": "1.0.0",
+  "description": "Boilerplate code for Chrome Extensions built with React and Vite",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "boilerplate-react-vite",
+    "default_popup": "src/pages/popup/index.html"
+  },
+  "permissions": []
+}
