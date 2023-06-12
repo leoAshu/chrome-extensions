@@ -16,9 +16,9 @@ const manifest: Manifest.WebExtensionManifest = {
     default_title: pkg.name,
     default_popup: 'src/pages/popup/index.html',
   },
-  // options_ui: {
-  //   page: '',
-  // },
+  options_ui: {
+    page: 'src/pages/options/index.html',
+  },
   // background: {
   //   service_worker: '',
   // },

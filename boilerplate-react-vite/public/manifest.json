@@ -13,5 +13,8 @@
     "default_title": "boilerplate-react-vite",
     "default_popup": "src/pages/popup/index.html"
   },
+  "options_ui": {
+    "page": "src/pages/options/index.html"
+  },
   "permissions": []
 }
