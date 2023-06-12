@@ -23,13 +23,13 @@ const manifest: Manifest.WebExtensionManifest = {
     service_worker: 'src/pages/background/index.js',
     // type: 'module'
   },
-  // content_scripts: [
-  //   {
-  //     matches: ['http://*/*', 'https://*/*', '<all_urls>'],
-  //     js: [''],
-  //     css: [''],
-  //   },
-  // ],
+  content_scripts: [
+    {
+      matches: ['http://*/*', 'https://*/*', '<all_urls>'],
+      js: ['src/pages/content/index.js'],
+      // css: [''],
+    },
+  ],
   permissions: [],
 }
 

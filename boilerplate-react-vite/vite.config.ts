@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import makeManifest from './utils/plugins/make-manifest'
+import buildContentScript from './utils/plugins/build-content-scripts'
 import { outputFolderName } from './utils/constants'
 
 // __dirname
@@ -21,7 +22,7 @@ export default defineConfig({
       '@pages': pagesDir,
     },
   },
-  plugins: [react(), makeManifest()],
+  plugins: [react(), makeManifest(), buildContentScript()],
   publicDir: publicDir,
   build: {
     outDir: outDir,

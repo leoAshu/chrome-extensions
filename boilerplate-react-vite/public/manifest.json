@@ -19,5 +19,17 @@
   "background": {
     "service_worker": "src/pages/background/index.js"
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "src/pages/content/index.js"
+      ]
+    }
+  ],
   "permissions": []
 }
