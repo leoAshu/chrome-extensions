@@ -19,9 +19,10 @@ const manifest: Manifest.WebExtensionManifest = {
   options_ui: {
     page: 'src/pages/options/index.html',
   },
-  // background: {
-  //   service_worker: '',
-  // },
+  background: {
+    service_worker: 'src/pages/background/index.js',
+    // type: 'module'
+  },
   // content_scripts: [
   //   {
   //     matches: ['http://*/*', 'https://*/*', '<all_urls>'],

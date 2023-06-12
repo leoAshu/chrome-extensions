@@ -31,6 +31,7 @@ export default defineConfig({
       input: {
         popup: resolve(pagesDir, 'popup', 'index.html'),
         options: resolve(pagesDir, 'options', 'index.html'),
+        background: resolve(pagesDir, 'background', 'index.ts'),
       },
       output: {
         entryFileNames: (chunk) => `src/pages/${chunk.name}/index.js`,
